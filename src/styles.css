@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import "~@fortawesome/fontawesome-free/css/all.css"; */
+
+/* 
+* Light Theme */
+/* .light {
+  --bg-color: #fff;
+  --text-color: #333;
+}
+
+.light.black {
+  --bg-color: #fff;
+  --text-color: #333;
+}
+
+.light.white {
+  --bg-color: #fff;
+  --text-color: #fff;
+}
+
+/* Dark Theme */
+/* .dark {
+  --bg-color: #333;
+  --text-color: #fff;
+}
+
+.dark.black {
+  --bg-color: #333;
+  --text-color: #333;
+}
+
+.dark.white {
+  --bg-color: #333;
+  --text-color: #fff;
+}
+
+/* Common styles */
+/* body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}  */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-tooltip {
+  background-color: #f00 !important;
+  color: #fff !important;
+  font-size: 14px !important;
+}

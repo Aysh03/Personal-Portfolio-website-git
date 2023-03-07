@@ -1,0 +1,23 @@
+.cursor-blink {
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* :host {
+  background: transparent !important;
+} */
+
+
+.trnns{
+  background-color: transparent!important;
+}
