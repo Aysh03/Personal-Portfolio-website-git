@@ -12,7 +12,7 @@ export class NavbarComponent {
   home: string = 'Home';
   projects: string = 'My Projects';
   contact: string = 'Contact Me';
-  aboutme: string = 'AYUSH RAJ PILLAI';
+  aboutme: string = 'About Me';
   myblogs: string = 'My Blogs';
   onToggleTheme() {
     console.log('Toggle button clicked');
