@@ -1,0 +1,48 @@
+
+<app-navbar></app-navbar>
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="flex flex-col sm:flex-row justify-center items-center h-full "> -->
+
+  <!-- <div class="flex flex-col sm:flex-row justify-center items-center h-full mx-3 sm:mx-0 sm:ml-1/3 sm:mr-1/3"> -->
+
+
+<div class="flex flex-col sm:flex-row justify-center items-center h-full mx-10 sm:mx-0 sm:ml-1/3 sm:mr-1/3 lg:mx-20 xl:mx-30">
+
+
+  <div class="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 bg-sky-400 p-4 shadow-lg rounded-lg">
+    <h2 class="text-2xl text-indigo-50  text-center underline  font-mono  italic mb-4">Contact Me</h2>
+    
+    <form class="max-w-lg py-4 mb-8 mt-8 bg px-4 sm:px-0 rounded-lg shadow-2xl" (ngSubmit)="sendEmail()" [formGroup]="contactForm">
+      <div class="mb-4 ">
+        <label class="block text-gray-900 font-bold mb-2 ml-1" for="name">Name</label>
+        <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" id="name" name="name" formControlName="name">
+        <div *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)" class="text-red-500 mt-1">Name is required</div>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-900 font-bold ml-1  mb-2" for="email">Email</label>
+        <input class="appearance-none border rounded w-full py-2 px-3   text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" id="email" name="email" formControlName="email">
+        <div *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)" class="text-red-500 mt-1">Email is required and must be a valid email address</div>
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-900 font-bold ml-1 mb-2" for="message">Message</label>
+        <textarea class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" name="message" formControlName="message"></textarea>
+        <div *ngIf="contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)" class="text-red-500 mt-1">Message is required</div>
+      </div>
+      <button class="bg-red-400 hover:bg-red-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline md:ml-44  ml-24" type="submit" [disabled]="!contactForm.valid">Send</button>
+    </form>
+  </div>
+
+  
+  <div class="w-full sm:w-1/3 lg:w-1/4 sm:mt-8">
+    hello
+  </div> 
+</div>

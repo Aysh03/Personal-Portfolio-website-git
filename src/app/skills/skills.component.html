@@ -1,6 +1,8 @@
-<section class="bg-gray-900">
+<!-- 
+<section class="bg-gray-900 my-32 mx-10 py-10 px-3 rounded-md">
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl text-sky-300 font-bold mb-4">My Skills</h2>
+
+    <h2 class="text-3xl text-sky-300 font-bold text-center mb-4">My Skills</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <div class="bg-white rounded-md shadow-md py-4 px-6">
         <h3 class="text-lg text-gray-900 font-bold mb-2">Angular</h3>
@@ -113,6 +115,171 @@
           </div>
           <span class="text-gray-700 font-bold text-sm">70%</span>
         </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- <div class="flex items-center justify-center">
+  <div class="relative w-72 h-72">
+    <canvas #skillCanvas class="absolute inset-0"></canvas>
+  </div>
+</div> -->
+
+
+<!-- 
+<div class="flex items-center justify-center">
+  <div class="relative w-72 h-72">
+    <canvas #skillCanvas class="absolute inset-0 w-full h-full"></canvas>
+  </div>
+</div> -->
+
+
+
+<!-- <div class="flex items-center   max-h-screen justify-center bgg">
+
+  <div class="relative w-96 h-96">
+    <canvas #skillCanvas class="absolute inset-0"></canvas>
+  </div>
+</div> -->
+
+
+
+
+<!-- <div class="pentagon-wrapper">
+  <div class="pentagon">
+    <div class="pentagon-content"> -->
+      <!-- Your content goes here -->
+    <!-- </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="pentagon-wrapper">
+  <svg class="pentagon" viewBox="0 0 200 200">
+    <path d="M100,10 190,70 150,180 50,180 10,70z" />
+  </svg>
+  <div class="pentagon-content">
+  
+
+
+
+
+
+
+  </div>
+</div> -->
+
+
+<!-- <th-canvas>
+<th-object3D loadGLTF url="../../assets/images/pentagonal_icositetrahedron.glb"> </th-object3D>
+</th-canvas> -->
+
+
+
+
+<!-- 
+<th-canvas [thStats]="true" (onRender)="this.onBeforeRender()" [shadow]="true" >
+  <th-scene>
+    
+    <th-ambientLight/>
+      <th-group [rotation]="[0, Math.PI,0]" [position]="[0,1,0]">
+      <th-object3D
+          [castShadow]="true"
+          loadGLTF
+          [url]="glbPath"
+          (onClick)="selected = !selected; shader.needsUpdate = true"
+          [position]="position"
+          [rotation]="rotation"
+      >
+        <th-mesh [refById]="'Cube008_2'" >
+          <th-shaderMaterial #shader  [vertexShader]="vertexShader" [fragmentShader]="selected ? fragmentShader1 : fragmentShader2" [uniforms]="uniforms"/>
+        </th-mesh>
+      </th-object3D>
+      </th-group>
+    
+    <th-directionalLight #light [castShadow]="true" [position]="[4,10,2]" [lookAt]="[0,-3,0]" [color]="'#ffffff' | color" [intensity]="0.75"/>
+    
+    <th-mesh [receiveShadow]="true" [rotation]="[3*Math.PI / 2, 0,0]" [position]="[0,-3,0]">
+      <th-planeGeometry [args]="[100,100]"/>
+      <th-meshBasicMaterial [color]="'#efefef' | color"/>
+    </th-mesh>
+    <th-perspectiveCamera
+      [args]="[55, 2, 0.1, 100]"
+      [position]="[-5, 0, -15]"
+      [lookAt]="[0, 0, 0]"
+    >
+      <th-orbitControls/>
+    </th-perspectiveCamera>
+  </th-scene>
+</th-canvas> -->
+
+
+
+
+<!-- <div class="w-full h-full">
+  <canvas></canvas>
+</div>
+ -->
+ <!-- <div class="w-full h-full flex items-center justify-center">
+  <canvas #canvas class="h-96 w-96"></canvas>
+</div> -->
+
+
+
+<!-- <div class="w-full h-full flex items-center justify-center">
+  <canvas #canvas class="h-full w-full" style="width: 100%; height: 100%;"></canvas>
+</div>  -->
+
+
+
+
+
+<!-- <div class="w-full h-full flex items-center justify-center ">
+  <canvas #canvas class="h-full w-full bg-fuchsia-500"></canvas>
+</div> -->
+
+
+<section class="py-12 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ 
+    <div class="mt-10">
+      <div class="text-center">
+        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          Skills
+        </h2>
+        <p class="mt-4 text-lg text-gray-500">
+          Here are some of my skills:
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-x-8 gap-y-10 md:grid-cols-3 lg:grid-cols-4">
+        <div>
+          <img class="h-20 mx-auto " src="../../assets/images/java.png" alt="Java">
+        </div>
+        <div>
+          <img class="h-20 mx-auto " src="../../assets/images/javascript.png" alt="JavaScript">
+        </div>
+        <div>
+          <img class="h-20 mx-auto " src="../../assets/images/html.png" alt="HTML CSS">
+        </div>
+        <div>
+          <img class="h-20 mx-auto " src="../../assets/images/angular.png" alt="Angular">
+        </div>
+        <div>
+          <img class="h-20 mx-auto " src="../../assets/images/spring-boot-1_5zDxm9B.jpg" alt="Springboot">
+        </div>
+        <!-- Add more images here -->
       </div>
     </div>
   </div>

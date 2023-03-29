@@ -11,14 +11,77 @@
 <!-- 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-MFZ9X9i0PofuUV6pO/k7jzU6hhGw6iR8E1BydeTs0o0rzhTgTNoK8W17o0q3ldabzb0QzD93WdZL7GGj2XbZnw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+
+
+
 <style>
 
-body{
+/* body{
   background-color: rgb(31 ,41 ,55);
+} */
+/* body {
+  background: linear-gradient(to bottom right, pink, rgb(219, 122, 219), rgb(102, 31, 102),rgb(153, 228, 153), yellow);
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} */
+
+
+
+
+body {
+  background: linear-gradient(to bottom right, pink, rgb(219, 122, 219), rgb(102, 31, 102),rgb(153, 228, 153), yellow);
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: gradient-animation 5s ease infinite;
 }
+
+@keyframes gradient-animation {
+  0% {
+    background: linear-gradient(to bottom right, pink, rgb(219, 122, 219), rgb(102, 31, 102),rgb(153, 228, 153), yellow);
+  }
+  50% {
+    background: linear-gradient(to bottom right, pink,  rgb(255, 166, 201),yellow, blue rgb(145, 45, 145),rgb(102, 153, 102));
+  }
+  100% {
+    background: linear-gradient(to bottom right, pink, rgb(176, 226, 255),blue rgb(178, 115, 238),rgb(153, 228, 153), rgb(224, 224, 87));
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 </style>
 

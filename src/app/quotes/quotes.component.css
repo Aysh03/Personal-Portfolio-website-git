@@ -1,0 +1,6 @@
+.owl-theme .owl-nav [class*=owl-]:hover,
+.owl-theme .owl-nav [class*=owl-]:focus,
+.owl-theme .owl-nav .owl-prev,
+.owl-theme .owl-nav .owl-next {
+  color: blue;
+}

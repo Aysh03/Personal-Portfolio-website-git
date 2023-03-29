@@ -79,7 +79,11 @@ private startTypingAnimation() {
 
 
 
+isChatbotVisible: boolean = false;
 
+toggleChatbotVisibility() {
+  this.isChatbotVisible = !this.isChatbotVisible;
+}
 
 
 
