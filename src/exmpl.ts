@@ -3,6 +3,21 @@
 
 
 
+// import { Component, EventEmitter, Output } from '@angular/core';
+
+// @Component({
+//   selector: 'app-child',
+//   template: `
+//     <button (click)="onClick()">Click me</button>
+//   `
+// })
+// export class ChildComponent {
+//   @Output() buttonClicked = new EventEmitter<void>();
+
+//   onClick() {
+//     this.buttonClicked.emit();
+//   }
+// }
 
 
 
@@ -12,14 +27,59 @@
 
 
 
+// import { Component } from '@angular/core';
+
+// @Component({
+//   selector: 'app-parent',
+//   template: `
+//     <app-child (buttonClicked)="onButtonClicked()"></app-child>
+//   `
+// })
+// export class ParentComponent {
+//   onButtonClicked() {
+//     console.log('Button clicked!');
+//   }
+// }
 
 
 
 
 
 
+// import { Component } from '@angular/core';
+// import { Signal } from '@ngneat/signal';
+
+// @Component({
+//   selector: 'app-child',
+//   template: `
+//     <button (click)="buttonClicked.emit()">Click me</button>
+//   `
+// })
+// export class ChildComponent {
+//   buttonClicked = new Signal();
+// }
 
 
+
+
+import { Component } from '@angular/core';
+import { listen } from '@ngneat/signal';
+
+@Component({
+  selector: 'app-parent',
+  template: `
+    <app-child></app-child>
+  `
+})
+export class ParentComponent {
+  constructor(private childComponent: ChildComponent) {}
+
+  ngOnInit() {
+    listen(this.childComponent.buttonClicked, () => {
+      console.log('Button clicked!');
+    });
+  }
+}
 
 
 
