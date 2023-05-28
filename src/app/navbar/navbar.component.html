@@ -1,25 +1,20 @@
-
-<nav class=" bg-rose-800 bg-opacity-50 w-36 h-96  mt-40 mb-56 fixed  left-0 side-navbar ">
-
-  <a routerLink="../aboutMe"  routerLinkActive="active-link">
-
+<nav
+  class="bg-rose-800 bg-opacity-50 w-36 h-96 mt-40 mb-56 fixed left-0 side-navbar"
+>
+  <a routerLink="../aboutMe" routerLinkActive="active-link">
     <span
-   
-    [matTooltip]="aboutme"
-    matTooltipPosition="right"
-    matTooltipHideDelay="1000"
-    matTooltipClass="my-tooltip-class">
-   
- 
-
-  <img 
-    class="w-14 h-10 rounded-full text-center  mt20 "
-    src="../../assets/images/filename.jpg"
-    alt="Profile Picture"
-  /> 
-</span>
- </a>
-
+      [matTooltip]="aboutme"
+      matTooltipPosition="right"
+      matTooltipHideDelay="1000"
+      matTooltipClass="my-tooltip-class"
+    >
+      <img
+        class="w-14 h-10 rounded-full text-center mt20"
+        src="../../assets/images/filename.jpg"
+        alt="Profile Picture"
+      />
+    </span>
+  </a>
 
   <ul class="text- ml-2">
     <li class="mb-5">
@@ -30,20 +25,28 @@
           matTooltipHideDelay="1000"
           matTooltipClass="my-tooltip-class"
         >
-          <mat-icon routerLinkActive="active-link" class="text-white border-solid border-black">home</mat-icon>
+          <mat-icon
+            routerLinkActive="active-link"
+            class="text-white border-solid border-black"
+            >home</mat-icon
+          >
         </span>
       </a>
     </li>
 
     <li class="mb-5">
-      <a routerLink="../projects" class="flex items-center ">
+      <a routerLink="../projects" class="flex items-center">
         <span
           [matTooltip]="projects"
           matTooltipPosition="right"
           matTooltipHideDelay="1000"
           matTooltipClass="my-tooltip-class"
         >
-          <mat-icon class="material-icons text-white border-solid border-gray-900 " routerLinkActive="active-link">token</mat-icon>
+          <mat-icon
+            class="material-icons text-white border-solid border-gray-900"
+            routerLinkActive="active-link"
+            >token</mat-icon
+          >
         </span>
       </a>
     </li>
@@ -56,15 +59,15 @@
           matTooltipHideDelay="1000"
           matTooltipClass="my-tooltip-class"
         >
-          <mat-icon routerLinkActive="active-link" class="text-white border-solid border-black"> contact_page</mat-icon>
+          <mat-icon
+            routerLinkActive="active-link"
+            class="text-white border-solid border-black"
+          >
+            contact_page</mat-icon
+          >
         </span>
       </a>
     </li>
-
-
-
-    
-
 
     <li class="mb-5">
       <a routerLink="../myBlogs" class="flex items-center">
@@ -74,20 +77,13 @@
           matTooltipHideDelay="1000"
           matTooltipClass="my-tooltip-class"
         >
-          <mat-icon routerLinkActive="active-link" class="material-icons  text-white border-solid border-black">rate_review</mat-icon>
+          <mat-icon
+            routerLinkActive="active-link"
+            class="material-icons text-white border-solid border-black"
+            >rate_review</mat-icon
+          >
         </span>
       </a>
     </li>
-
-
-    
-
   </ul>
-
 </nav>
-
-
-
-
-
-
